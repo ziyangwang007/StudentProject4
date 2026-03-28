@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="static-site.css">
+<title>Perfumes</title>
+<link rel="icon" type="image/x-icon" href="nova_favicon.png"/>
+</head>
+<body>
+
+
+<header id="main-header">
+    <nav id="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="perfumes.html" class="nav-link active">Perfumes</a>
+        </div>
+        <a href="index.html" class="logo-link">
+            <img src="nova_logo_black.png" id="logo" alt="NOVA Logo">
+        </a>
+        <div class="nav-right">
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme">
+                <img src="dark_mode_icon.png" class="theme-icon theme-icon-moon theme-icon-default" alt="">
+                <img src="active_dark_mode_icon.png" class="theme-icon theme-icon-moon theme-icon-active" alt="">
+                <img src="light_mode_icon_white.png" class="theme-icon theme-icon-sun theme-icon-default" alt="">
+                <img src="active_light_mode_icon.png" class="theme-icon theme-icon-sun theme-icon-active" alt="">
+            </button>
+            <a href="register.html" class="nav-link">Register</a>
+            <a href="login.html" class="nav-link">Log in</a>
+            <a href="basket.html" class="basket-link" aria-label="Shopping basket">
+                <img src="basket_icon.png" class="basket-icon basket-icon-default" alt="Basket icon">
+                <img src="active_basket_icon.png" class="basket-icon basket-icon-active" alt="Active basket icon">
+            </a>
+        </div>
+    </nav>
+</header>
+
+
+<main class="shop-container">
+    <h1 class="shop-title">Shop Perfumes</h1>
+
+    <form id="perfume-filter-form" class="filter-bar">
+        <div class="filter-group">
+            <label for="category">Filter Products:</label>
+            <select name="category" id="category">
+                <option value="all">All categories</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="sort">Sort perfumes:</label>
+            <select name="sort" id="sort">
+                <option value="relevant">Most relevant</option>
+                <option value="price_low">Price: Low to High</option>
+                <option value="price_high">Price: High to Low</option>
+                <option value="name_az">Name: A–Z</option>
+                <option value="name_za">Name: Z–A</option>
+                <option value="newest">Newest</option>
+            </select>
+        </div>
+
+        <div class="filter-group">
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search" placeholder="Search perfumes...">
+        </div>
+
+        <div class="filter-actions">
+            <button type="submit" class="apply-btn">Apply</button>
+            <button type="button" id="clear-filters" class="clear-btn">Clear</button>
+        </div>
+    </form>
+
+    <p id="perfume-results-summary" class="demo-results-summary">35 perfumes available in this static demo.</p>
+
+    <section id="perfume-grid" class="products-grid">
+        
+<article class="product-card" data-product-id="27">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="27" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="27" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/amber_chai.png" alt="Amber Chai">
+    </div>
+    <div class="product-info">
+        <h3>Amber Chai</h3>
+        <p class="product-category">Women - Spicy Perfumes</p>
+        <p class="product-price">£90.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=27" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="48">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="48" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="48" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/amber_nightfall_nova.png" alt="Amber Nightfall">
+    </div>
+    <div class="product-info">
+        <h3>Amber Nightfall</h3>
+        <p class="product-category">Men - Oriental Perfumes</p>
+        <p class="product-price">£97.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=48" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="6">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="6" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="6" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/aurora_citrus_bloom.png" alt="Aurora Citrus Bloom">
+    </div>
+    <div class="product-info">
+        <h3>Aurora Citrus Bloom</h3>
+        <p class="product-category">Women - Citrus Perfumes</p>
+        <p class="product-price">£69.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=6" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="41">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="41" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="41" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/bergamont_flash_nova.png" alt="Bergamot Flash">
+    </div>
+    <div class="product-info">
+        <h3>Bergamot Flash</h3>
+        <p class="product-category">Men - Citrus Perfumes</p>
+        <p class="product-price">£78.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=41" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="56">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="56" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="56" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/black_pepper_woods.png" alt="Black Pepper Woods">
+    </div>
+    <div class="product-info">
+        <h3>Black Pepper Woods</h3>
+        <p class="product-category">Men - Spicy Perfumes</p>
+        <p class="product-price">£86.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=56" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="57">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="57" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="57" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/cardamom_leather.png" alt="Cardamom Leather">
+    </div>
+    <div class="product-info">
+        <h3>Cardamom Leather</h3>
+        <p class="product-category">Men - Spicy Perfumes</p>
+        <p class="product-price">£89.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=57" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="42">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="42" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="42" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/cedar_lemon_frost.png" alt="Cedar Lemon Frost">
+    </div>
+    <div class="product-info">
+        <h3>Cedar Lemon Frost</h3>
+        <p class="product-category">Men - Citrus Perfumes</p>
+        <p class="product-price">£76.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=42" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="61">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="61" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="61" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/cedar_spice_storm.png" alt="Cedar Spice Storm">
+    </div>
+    <div class="product-info">
+        <h3>Cedar Spice Storm</h3>
+        <p class="product-category">Men - Spicy Perfumes</p>
+        <p class="product-price">£92.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=61" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="13">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="13" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="13" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/citrus_apple_mix.png" alt="Citrus Apple Mist">
+    </div>
+    <div class="product-info">
+        <h3>Citrus Apple Mist</h3>
+        <p class="product-category">Women - Citrus Perfumes</p>
+        <p class="product-price">£73.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=13" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="71">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="71" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="71" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/citrus_discovery_gift_box.png" alt="Citrus Discovery Gift Box">
+    </div>
+    <div class="product-info">
+        <h3>Citrus Discovery Gift Box</h3>
+        <p class="product-category">Gift Box</p>
+        <p class="product-price">£59.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=71" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="38">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="38" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="38" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/citrus_rush_nova.png" alt="Citrus Rush Nova">
+    </div>
+    <div class="product-info">
+        <h3>Citrus Rush Nova</h3>
+        <p class="product-category">Men - Citrus Perfumes</p>
+        <p class="product-price">£72.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=38" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="26">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="26" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="26" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/crimson_spice.png" alt="Crimson Spice">
+    </div>
+    <div class="product-info">
+        <h3>Crimson Spice</h3>
+        <p class="product-category">Women - Spicy Perfumes</p>
+        <p class="product-price">£88.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=26" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="72">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="72" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="72" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/floral_elegance_gift_box.png" alt="Floral Elegance Gift Box">
+    </div>
+    <div class="product-info">
+        <h3>Floral Elegance Gift Box</h3>
+        <p class="product-category">Gift Box</p>
+        <p class="product-price">£62.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=72" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="37">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="37" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="37" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/graphite_citrus_vetiver_nova.png" alt="Graphite Citrus Vetiver">
+    </div>
+    <div class="product-info">
+        <h3>Graphite Citrus Vetiver</h3>
+        <p class="product-category">Men - Citrus Perfumes</p>
+        <p class="product-price">£79.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=37" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="3">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="3" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="3" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/imperal_musk.png" alt="Nova Imperial Musk">
+    </div>
+    <div class="product-info">
+        <h3>Nova Imperial Musk</h3>
+        <p class="product-category">Exclusive Perfumes</p>
+        <p class="product-price">£135.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=3" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="47">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="47" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="47" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/incense_shadow_nova.png" alt="Nova Incense Shadow">
+    </div>
+    <div class="product-info">
+        <h3>Nova Incense Shadow</h3>
+        <p class="product-category">Men - Oriental Perfumes</p>
+        <p class="product-price">£95.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=47" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="17">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="17" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="17" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/jasmine_velvet.png" alt="Jasmine Velvet Nova">
+    </div>
+    <div class="product-info">
+        <h3>Jasmine Velvet Nova</h3>
+        <p class="product-category">Women - Floral Perfumes</p>
+        <p class="product-price">£82.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=17" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="11">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="11" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="11" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/mandranin_crystal.png" alt="Mandarin Crystal">
+    </div>
+    <div class="product-info">
+        <h3>Mandarin Crystal</h3>
+        <p class="product-category">Women - Citrus Perfumes</p>
+        <p class="product-price">£70.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=11" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="36">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="36" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="36" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/marine_citrus_nova.png" alt="Nova Marine Citrus">
+    </div>
+    <div class="product-info">
+        <h3>Nova Marine Citrus</h3>
+        <p class="product-category">Men - Citrus Perfumes</p>
+        <p class="product-price">£74.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=36" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="2">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="2" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="2" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/midnight_oud.png" alt="Nova Midnight Oud">
+    </div>
+    <div class="product-info">
+        <h3>Nova Midnight Oud</h3>
+        <p class="product-category">Exclusive Perfumes</p>
+        <p class="product-price">£139.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=2" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="5">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="5" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="5" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/noir_intense.png" alt="Nova Noir Intense">
+    </div>
+    <div class="product-info">
+        <h3>Nova Noir Intense</h3>
+        <p class="product-category">Exclusive Perfumes</p>
+        <p class="product-price">£145.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=5" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="74">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="74" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="74" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/nova_signature_collection_box.png" alt="Nova Signature Collection Box">
+    </div>
+    <div class="product-info">
+        <h3>Nova Signature Collection Box</h3>
+        <p class="product-category">Gift Box</p>
+        <p class="product-price">£75.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=74" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="22">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="22" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="22" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/orchid_serenade.png" alt="Orchid Serenade">
+    </div>
+    <div class="product-info">
+        <h3>Orchid Serenade</h3>
+        <p class="product-category">Women - Floral Perfumes</p>
+        <p class="product-price">£88.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=22" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="73">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="73" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="73" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/oriental_duo_gift_set.png" alt="Oriental Duo Gift Set">
+    </div>
+    <div class="product-info">
+        <h3>Oriental Duo Gift Set</h3>
+        <p class="product-category">Gift Box</p>
+        <p class="product-price">£69.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=73" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="49">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="49" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="49" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/oritenal_noir_code_nova.png" alt="Oriental Noir Code">
+    </div>
+    <div class="product-info">
+        <h3>Oriental Noir Code</h3>
+        <p class="product-category">Men - Oriental Perfumes</p>
+        <p class="product-price">£102.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=49" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="18">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="18" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="18" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/peony_whispher.png" alt="Peony Whisper">
+    </div>
+    <div class="product-info">
+        <h3>Peony Whisper</h3>
+        <p class="product-category">Women - Floral Perfumes</p>
+        <p class="product-price">£76.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=18" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="65">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="65" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="65" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/red_pepper_intenso.png" alt="Black Pepper Intenso">
+    </div>
+    <div class="product-info">
+        <h3>Black Pepper Intenso</h3>
+        <p class="product-category">Men - Spicy Perfumes</p>
+        <p class="product-price">£96.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=65" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="16">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="16" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="16" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/rose_etolite.png" alt="Rose Étoile">
+    </div>
+    <div class="product-info">
+        <h3>Rose Étoile</h3>
+        <p class="product-category">Women - Floral Perfumes</p>
+        <p class="product-price">£79.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=16" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="1">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="1" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="1" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/royal_essence.png" alt="Nova Royal Essence">
+    </div>
+    <div class="product-info">
+        <h3>Nova Royal Essence</h3>
+        <p class="product-category">Exclusive Perfumes</p>
+        <p class="product-price">£129.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=1" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="46">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="46" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="46" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/saffron_royale.png" alt="Oud Saffron Royale">
+    </div>
+    <div class="product-info">
+        <h3>Oud Saffron Royale</h3>
+        <p class="product-category">Men - Oriental Perfumes</p>
+        <p class="product-price">£99.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=46" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="75">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="75" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="75" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/spice_gift_chest.png" alt="Spice Trail Gift Chest">
+    </div>
+    <div class="product-info">
+        <h3>Spice Trail Gift Chest</h3>
+        <p class="product-category">Gift Box</p>
+        <p class="product-price">£72.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=75" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="58">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="58" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="58" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/spiced_vetiver_nova.png" alt="Spiced Vetiver Nova">
+    </div>
+    <div class="product-info">
+        <h3>Spiced Vetiver Nova</h3>
+        <p class="product-category">Men - Spicy Perfumes</p>
+        <p class="product-price">£91.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=58" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="7">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="7" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="7" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/summer_zest_nova.png" alt="Summer Zest Nova">
+    </div>
+    <div class="product-info">
+        <h3>Summer Zest Nova</h3>
+        <p class="product-category">Women - Citrus Perfumes</p>
+        <p class="product-price">£72.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=7" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="53">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="53" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="53" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/tobacco_noir_nova.png" alt="Tobacco Noir Nova">
+    </div>
+    <div class="product-info">
+        <h3>Tobacco Noir Nova</h3>
+        <p class="product-category">Men - Oriental Perfumes</p>
+        <p class="product-price">£115.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=53" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="4">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="4" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="4" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/velvet_amber.png" alt="Nova Velvet Amber">
+    </div>
+    <div class="product-info">
+        <h3>Nova Velvet Amber</h3>
+        <p class="product-category">Exclusive Perfumes</p>
+        <p class="product-price">£132.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=4" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+    </section>
+</main>
+
+
+<footer class="nova-footer">
+    <div class="nova-footer-inner">
+        <div class="footer-top-row">
+            <div class="footer-col">
+                <h4>Help</h4>
+                <a href="contact.html">Contact Us</a>
+                <a href="#" class="footer-link-highlight">Accessibility Statement</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Returns Policy</a>
+                <a href="#">FAQs</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <a href="about.html">Our Story</a>
+                <a href="perfumes.html">Shop all perfumes</a>
+                <a href="register.html">Create an account</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Terms &amp; Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Customer Reviews Policy</a>
+            </div>
+
+            <div class="footer-col footer-col-right">
+                <div class="footer-payments">
+                    <span class="static-payment-badge">Visa</span>
+                    <span class="static-payment-badge">Mastercard</span>
+                    <span class="static-payment-badge">PayPal</span>
+                    <span class="static-payment-badge">Apple Pay</span>
+                </div>
+
+                <div class="footer-rating-card">
+                    <div class="rating-logo">TrustScore</div>
+                    <div class="rating-stars">★★★★★</div>
+                    <div class="rating-text">4.7 | 154,224 reviews</div>
+                </div>
+
+                <div class="footer-membership-logo">
+                    <span>Member of NOVA Group</span>
+                </div>
+
+                <div class="footer-app-badges">
+                    <img src="app_store.png" alt="Download on App Store">
+                    <img src="play_store.png" alt="Download on Google Play">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-middle-row">
+            <div class="footer-social">
+                <a href="#" class="social-circle">f</a>
+                <a href="#" class="social-circle">x</a>
+                <a href="#" class="social-circle">▶</a>
+                <a href="#" class="social-circle">in</a>
+                <a href="#" class="social-circle">P</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom-row">
+            <p>Copyright © 2025 NOVA Fragrance Ltd</p>
+            <p>NOVA Fragrance Ltd is registered in England &amp; Wales. This website is for educational use as part of a university project.</p>
+        </div>
+    </div>
+</footer>
+
+
+<div id="nova-chatbot" class="nova-chatbot" data-avatar="noa_icon.png" data-callout="Looking for citrus under £70?">
+    <div id="nova-chatbot-panel" class="nova-chatbot-panel" hidden>
+        <div class="nova-chatbot-panel-inner">
+            <div class="nova-chatbot-header">
+                <div class="nova-chatbot-title">
+                    <span class="nova-chatbot-title-main">NOA</span>
+                    <span class="nova-chatbot-title-sub">Messages</span>
+                </div>
+                <button type="button" class="nova-chatbot-close" id="nova-chatbot-close" aria-label="Close NOA">&times;</button>
+            </div>
+            <div id="nova-chatbot-messages" class="nova-chatbot-messages" aria-live="polite"></div>
+            <div id="nova-chatbot-suggestions" class="nova-chatbot-suggestions"></div>
+            <form id="nova-chatbot-form" class="nova-chatbot-form">
+                <label class="nova-chatbot-sr-only" for="nova-chatbot-input">Your message</label>
+                <input type="text" id="nova-chatbot-input" class="nova-chatbot-input" autocomplete="off" placeholder="Ask about perfumes, delivery, returns…" />
+                <button type="submit" class="nova-chatbot-send">Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="nova-chatbot-launcher">
+        <div class="nova-chatbot-callout" id="nova-chatbot-callout">
+            <div class="nova-chatbot-callout-inner">
+                <span class="nova-chatbot-callout-line">Looking for citrus under £70?</span>
+                <button
+                    type="button"
+                    class="nova-chatbot-callout-cta"
+                    id="nova-chatbot-callout-cta"
+                    aria-label="Try NOA"
+                    onclick="(function(){var t=document.getElementById('nova-chatbot-toggle'); if(t){t.click();}})();"
+                >
+                    TRY NOA ✨
+                </button>
+            </div>
+        </div>
+        <button type="button" id="nova-chatbot-toggle" class="nova-chatbot-toggle" aria-expanded="false" aria-controls="nova-chatbot-panel" aria-describedby="nova-chatbot-callout" title="Open NOA">
+            <span class="nova-chatbot-avatar-ring" aria-hidden="true">
+                <img src="noa_icon.png" class="nova-chatbot-toggle-img" width="48" height="48" alt="" decoding="async" />
+            </span>
+            <span class="nova-chatbot-sr-only">Open NOA</span>
+        </button>
+    </div>
+</div>
+
+
+
+<script src="catalog-data.js"></script>
+<script src="theme.js"></script>
+<script src="site-interactions.js"></script>
+<script src="perfumes-page.js"></script>
+
+<script src="chatbot.js"></script>
+
+</body>
+</html>

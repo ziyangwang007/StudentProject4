@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="static-site.css">
+<title>Home</title>
+<link rel="icon" type="image/x-icon" href="nova_favicon.png"/>
+</head>
+<body class="nova-intro-pending">
+
+<div id="intro-overlay">
+    <video id="intro-video" autoplay muted playsinline>
+        <source src="nova_intro.mp4" type="video/mp4">
+    </video>
+</div>
+<div id="page-content" class="page-content">
+
+
+<header id="main-header">
+    <nav id="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="perfumes.html" class="nav-link">Perfumes</a>
+        </div>
+        <a href="index.html" class="logo-link">
+            <img src="nova_logo_black.png" id="logo" alt="NOVA Logo">
+        </a>
+        <div class="nav-right">
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme">
+                <img src="dark_mode_icon.png" class="theme-icon theme-icon-moon theme-icon-default" alt="">
+                <img src="active_dark_mode_icon.png" class="theme-icon theme-icon-moon theme-icon-active" alt="">
+                <img src="light_mode_icon_white.png" class="theme-icon theme-icon-sun theme-icon-default" alt="">
+                <img src="active_light_mode_icon.png" class="theme-icon theme-icon-sun theme-icon-active" alt="">
+            </button>
+            <a href="register.html" class="nav-link">Register</a>
+            <a href="login.html" class="nav-link">Log in</a>
+            <a href="basket.html" class="basket-link" aria-label="Shopping basket">
+                <img src="basket_icon.png" class="basket-icon basket-icon-default" alt="Basket icon">
+                <img src="active_basket_icon.png" class="basket-icon basket-icon-active" alt="Active basket icon">
+            </a>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+    <div class="hero-wrapper">
+        <section class="hero">
+            <div class="hero-inner">
+                <h1 class="hero-title">Discover Your Scent</h1>
+                <p class="hero-subtitle">Inspired by the art of expression.</p>
+                <a href="register.html" class="hero-btn">Join Now</a>
+            </div>
+        </section>
+    </div>
+
+    <section class="why-nova">
+        <div class="why-nova-inner no-image">
+            <div class="why-nova-text">
+                <h2>Why NOVA?</h2>
+                <p>
+                    NOVA is more than a perfume – it’s a quiet burst of confidence.
+                    Every fragrance is inspired by light, movement and modern rituals.
+                    Clean lines, luminous notes and long-lasting wear, crafted to feel like <em>you</em> on your best day.
+                </p>
+                <p>
+                    Whether you’re stepping into a lecture, a meeting or a night out,
+                    NOVA adds a subtle signature that people remember.
+                </p>
+                <ul class="why-nova-list">
+                    <li>Long-lasting yet never overpowering.</li>
+                    <li>Cruelty-free and thoughtfully sourced.</li>
+                    <li>Modern, minimalist bottle design.</li>
+                </ul>
+                <a href="contact.html" class="hero-btn why-nova-contact-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-featured">
+        <div class="home-section-header">
+            <h2>Featured Perfumes</h2>
+            <a href="perfumes.html" class="view-all-link">View all perfumes</a>
+        </div>
+        <div id="home-featured-grid" class="products-grid home-products-grid">
+            
+<article class="product-card" data-product-id="1">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="1" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="1" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/royal_essence.png" alt="Nova Royal Essence">
+    </div>
+    <div class="product-info">
+        <h3>Nova Royal Essence</h3>
+        <p class="product-category">Exclusive Perfumes</p>
+        <p class="product-price">£129.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=1" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="6">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="6" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="6" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/aurora_citrus_bloom.png" alt="Aurora Citrus Bloom">
+    </div>
+    <div class="product-info">
+        <h3>Aurora Citrus Bloom</h3>
+        <p class="product-category">Women - Citrus Perfumes</p>
+        <p class="product-price">£69.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=6" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+<article class="product-card" data-product-id="37">
+    <div class="product-img-wrapper">
+        <div class="product-actions">
+            <button type="button" class="card-icon fav-toggle" data-product-id="37" title="Add to favourites">
+                <span class="heart">&hearts;</span>
+            </button>
+            <button type="button" class="card-icon cart-btn js-add-to-cart" data-product-id="37" data-size-ml="50" title="Add to basket">
+                &#128722;
+            </button>
+        </div>
+        <img src="uploads/products/graphite_citrus_vetiver_nova.png" alt="Graphite Citrus Vetiver">
+    </div>
+    <div class="product-info">
+        <h3>Graphite Citrus Vetiver</h3>
+        <p class="product-category">Men - Citrus Perfumes</p>
+        <p class="product-price">£79.00</p>
+        <div class="card-footer-line">
+            <div class="product-rating">No reviews yet</div>
+            <a href="product.html?id=37" class="view-btn">View</a>
+        </div>
+    </div>
+</article>
+
+        </div>
+    </section>
+
+    <section class="about-unique-section">
+        <div class="about-unique-inner">
+            <h2 class="about-heading">What Makes Nova Unique</h2>
+            <p class="about-unique-lead">
+                NOVA feels like a new constellation — familiar enough to love instantly, distinct enough to remember.
+            </p>
+            <div class="unique-grid">
+                <div class="unique-point">
+                    <h3>Celestial Inspiration</h3>
+                    <p>Night skies, light bursts and constellations translated into perfume experiences.</p>
+                </div>
+                <div class="unique-point">
+                    <h3>Luxury, Made Accessible</h3>
+                    <p>Premium fragrance without the traditional luxury price barrier.</p>
+                </div>
+                <div class="unique-point">
+                    <h3>Minimalist, Futuristic Design</h3>
+                    <p>Precision, symmetry and modern silhouettes built for your shelf.</p>
+                </div>
+                <div class="unique-point">
+                    <h3>Art Meets Science</h3>
+                    <p>Creative vision blended with chemistry and meticulous formulation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer class="nova-footer">
+    <div class="nova-footer-inner">
+        <div class="footer-top-row">
+            <div class="footer-col">
+                <h4>Help</h4>
+                <a href="contact.html">Contact Us</a>
+                <a href="#" class="footer-link-highlight">Accessibility Statement</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Returns Policy</a>
+                <a href="#">FAQs</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <a href="about.html">Our Story</a>
+                <a href="perfumes.html">Shop all perfumes</a>
+                <a href="register.html">Create an account</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Terms &amp; Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Customer Reviews Policy</a>
+            </div>
+
+            <div class="footer-col footer-col-right">
+                <div class="footer-payments">
+                    <span class="static-payment-badge">Visa</span>
+                    <span class="static-payment-badge">Mastercard</span>
+                    <span class="static-payment-badge">PayPal</span>
+                    <span class="static-payment-badge">Apple Pay</span>
+                </div>
+
+                <div class="footer-rating-card">
+                    <div class="rating-logo">TrustScore</div>
+                    <div class="rating-stars">★★★★★</div>
+                    <div class="rating-text">4.7 | 154,224 reviews</div>
+                </div>
+
+                <div class="footer-membership-logo">
+                    <span>Member of NOVA Group</span>
+                </div>
+
+                <div class="footer-app-badges">
+                    <img src="app_store.png" alt="Download on App Store">
+                    <img src="play_store.png" alt="Download on Google Play">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-middle-row">
+            <div class="footer-social">
+                <a href="#" class="social-circle">f</a>
+                <a href="#" class="social-circle">x</a>
+                <a href="#" class="social-circle">▶</a>
+                <a href="#" class="social-circle">in</a>
+                <a href="#" class="social-circle">P</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom-row">
+            <p>Copyright © 2025 NOVA Fragrance Ltd</p>
+            <p>NOVA Fragrance Ltd is registered in England &amp; Wales. This website is for educational use as part of a university project.</p>
+        </div>
+    </div>
+</footer>
+
+
+<div id="nova-chatbot" class="nova-chatbot" data-avatar="noa_icon.png" data-callout="Discover your signature scent">
+    <div id="nova-chatbot-panel" class="nova-chatbot-panel" hidden>
+        <div class="nova-chatbot-panel-inner">
+            <div class="nova-chatbot-header">
+                <div class="nova-chatbot-title">
+                    <span class="nova-chatbot-title-main">NOA</span>
+                    <span class="nova-chatbot-title-sub">Messages</span>
+                </div>
+                <button type="button" class="nova-chatbot-close" id="nova-chatbot-close" aria-label="Close NOA">&times;</button>
+            </div>
+            <div id="nova-chatbot-messages" class="nova-chatbot-messages" aria-live="polite"></div>
+            <div id="nova-chatbot-suggestions" class="nova-chatbot-suggestions"></div>
+            <form id="nova-chatbot-form" class="nova-chatbot-form">
+                <label class="nova-chatbot-sr-only" for="nova-chatbot-input">Your message</label>
+                <input type="text" id="nova-chatbot-input" class="nova-chatbot-input" autocomplete="off" placeholder="Ask about perfumes, delivery, returns…" />
+                <button type="submit" class="nova-chatbot-send">Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="nova-chatbot-launcher">
+        <div class="nova-chatbot-callout" id="nova-chatbot-callout">
+            <div class="nova-chatbot-callout-inner">
+                <span class="nova-chatbot-callout-line">Discover your signature scent</span>
+                <button
+                    type="button"
+                    class="nova-chatbot-callout-cta"
+                    id="nova-chatbot-callout-cta"
+                    aria-label="Try NOA"
+                    onclick="(function(){var t=document.getElementById('nova-chatbot-toggle'); if(t){t.click();}})();"
+                >
+                    TRY NOA ✨
+                </button>
+            </div>
+        </div>
+        <button type="button" id="nova-chatbot-toggle" class="nova-chatbot-toggle" aria-expanded="false" aria-controls="nova-chatbot-panel" aria-describedby="nova-chatbot-callout" title="Open NOA">
+            <span class="nova-chatbot-avatar-ring" aria-hidden="true">
+                <img src="noa_icon.png" class="nova-chatbot-toggle-img" width="48" height="48" alt="" decoding="async" />
+            </span>
+            <span class="nova-chatbot-sr-only">Open NOA</span>
+        </button>
+    </div>
+</div>
+
+</div>
+
+<script src="catalog-data.js"></script>
+<script src="theme.js"></script>
+<script src="site-interactions.js"></script>
+<script src="intro.js"></script>
+
+<script src="chatbot.js"></script>
+
+</body>
+</html>
